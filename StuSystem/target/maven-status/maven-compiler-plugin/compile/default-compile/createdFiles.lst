@@ -1,0 +1,5 @@
+com\test\service\StudentService.class
+com\test\dao\StudentMapper.class
+com\test\controller\StudentController.class
+com\test\service\StudentServiceImpl.class
+com\test\pojo\Student.class

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.dao.StudentMapper">
+    <insert id="addStudent" parameterType="Student">
+        insert into stusys.stu_info (stu_id, stu_name, stu_collage, stu_major, stu_pwd)
+         values (#{stu_id}, #{stu_name}, #{stu_collage}, #{stu_major}, #{stu_pwd})
+    </insert>
+
+    <delete id="deleteStudentByID" parameterType="char">
+        delete from stusys.stu_info where stu_id = #{stuId}
+    </delete>
+
+    <update id="updateStudent" parameterType="Student">
+        update stusys.stu_info
+    </update>
+
+</mapper>
